@@ -1,0 +1,30 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "fg",
+    "longName": "BatteryLogger_1_0",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_GRAPHIC",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "BatteryLogger_1_0",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "6ac8b7c0-23a3-4d57-8513-55b4797ca566",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
