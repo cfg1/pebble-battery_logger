@@ -104,6 +104,7 @@ static void load_data(void){
   
   int read_pos = -1, write_pos = -1;
   int key = KEY_CURRENT_INDEX;
+  int number_of_entries_read = 0;
   if (persist_exists(key)){
     read_pos = persist_read_int(key);
     write_pos = read_pos; //save which was the write_pos from the worker
@@ -124,6 +125,7 @@ static void load_data(void){
           time_stamp = (time_t)persist_read_int(key);
           struct tm* loctime = localtime(&time_stamp);
           strftime(time_str, sizeof(time_str), "%Y-%m-%d_%H:%M:%S:\n", loctime);
+          number_of_entries_read++;
         } else {
           snprintf(time_str, sizeof(time_str), "no time stamp found:\n");
           time_stamp = 0;
@@ -149,6 +151,7 @@ static void load_data(void){
       }
       
       if (read_pos == write_pos) break;
+      if (number_of_entries_read > NUMBER_OF_ENTRIES_TO_SHOW) break;
     }
     
     strcpy(text_buffer, text);

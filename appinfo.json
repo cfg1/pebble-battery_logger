@@ -4,7 +4,7 @@
         ""
     ],
     "companyName": "fg",
-    "longName": "BatteryLogger_1_0",
+    "longName": "BatteryLogger_1_1",
     "projectType": "native",
     "resources": {
         "media": [
@@ -17,13 +17,13 @@
         ]
     },
     "sdkVersion": "3",
-    "shortName": "BatteryLogger_1_0",
+    "shortName": "BatteryLogger_1_1",
     "targetPlatforms": [
         "aplite",
         "basalt"
     ],
     "uuid": "6ac8b7c0-23a3-4d57-8513-55b4797ca566",
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": false
     }
